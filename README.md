@@ -24,24 +24,15 @@ develop this REST-ful Java application:
 - Spring Actuator
 
 ## Building the project
-1. Clone/Pull via Git or download zip file of this project (and un-zip)
+1) Clone/Pull via Git or download zip file of this project (and un-zip) 
 to a directory;
 
-2. Using command line tool, navigate to the root directory where this
-README.md file and, specifically, the pom.xml file is located;
-4. Run the following maven command via the command line:
 
-``mvn clean install -DskipTests``
-
-*This command will skip tests
-*Check the output logs on the command line console to see if there are
-any errors.
-
-## Running the application
-Before running the actual application, It is essential to run the
-Zookeeper and Kafka servers respectively (in that order) first, as the
-microservice depends on the above 2 servers to send and receive event
-messages. The following are commands to run the 2 respective servers.
+2) Before building and running the actual application (include running 
+tests) , It is essential to run the Zookeeper and Kafka servers 
+respectively (in that order) first, as the microservice depends on the 
+above 2 servers to send and receive event messages. The following are 
+commands to run the 2 respective servers.
 Assuming that Kafka (bundled with Zookeeper) is installed on your 
 Windows machine, navigate to the root directory of kafka installation:
 
@@ -49,12 +40,34 @@ Windows machine, navigate to the root directory of kafka installation:
 
 ``.\bin\windows\kafka-server-start.bat .\config\server.properties``
 
+
+3) Using command line tool, navigate to the root directory where this
+README.md file and, specifically, the pom.xml file is located;
+
+
+4) Run the following maven command via the command line:
+
+``mvn clean install -DskipTests``
+
+*This command will skip tests
+
+or 
+
+``mvn clean install -DskipTests``
+
+*This command will run tests after installing dependencies
+
+Check the output logs on the command line console to see if there are
+any errors.
+
+## Running the application
 You may run the application by running the following maven command via 
 the command line:
 
 ``mvn spring-boot:run``
 
-*Check the output logs on the command line console to see if there are
+Please make sure Zookeeper and Kafta servers are running. Check the 
+output logs on the command line console to see if there are
 are any errors.
 
 ## Accessing the API documentation

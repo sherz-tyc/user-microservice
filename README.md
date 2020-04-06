@@ -41,6 +41,9 @@ Windows machine, navigate to the root directory of kafka installation:
 ``.\bin\windows\kafka-server-start.bat .\config\server.properties``
 
 
+Documentations on how to install Apache Kafka and Zookeeper can be found here:
+https://kafka.apache.org/quickstart
+
 3) Using command line tool, navigate to the root directory where this
 README.md file and, specifically, the pom.xml file is located;
 

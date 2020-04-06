@@ -79,11 +79,6 @@ consumer to stall and wait. I have tried several solutions to this
 problem but with no luck, I shall fix this once a solution has been
 found.
 
-## Building Docker image
-A Dockerfile is included in this Spring-Boot application for the
-pupose of building a Docker image. In order to perform such action,
-Docker must be installed on the machine. Please refer to the Docker
-website for instructions on installing Docker the right way.
 
 
 Thank you for taking an interest in this project.

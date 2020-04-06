@@ -9,7 +9,13 @@ microservices can subscribe to the Kafka and be notified of any
 changes to the repository.
 Spring Actuator is employed to provide basic monitoring of the
 microservice. One can extend the features of this actuator to
-provide improved monitoring. 
+provide improved monitoring.
+Examples of health monitoring endpoints:
+
+``http://localhost:8080/actuator/metrics/jvm.gc.pause``
+
+``http://localhost:8080/actuator/health``
+
 
 ## Designs/Tools
 The following is a list of tools/framework that I have used to 

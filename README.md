@@ -62,7 +62,7 @@ README.md file and, specifically, the pom.xml file is located;
 
 or 
 
-``mvn clean install -DskipTests``
+``mvn clean install``
 
 *This command will run tests after installing dependencies
 
